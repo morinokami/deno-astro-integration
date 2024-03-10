@@ -1,0 +1,17 @@
+{
+  "tasks": {
+    "check": "deno fmt --check && deno lint && deno check **/*.ts"
+  },
+  "lint": {
+    "include": ["src/", "scripts/"],
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "include": ["src/", "scripts/"]
+  },
+  "imports": {
+    "$dnt": "https://deno.land/x/dnt@0.40.0/mod.ts"
+  }
+}
